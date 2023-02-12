@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepl translator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color: rgb(2 132 199); display: flex; justify-content: center; color: white;" >
+    <form style="padding:25px;border-radius:10px;background-color: rgb(14 165 233); position: absolute; top: 50%; transform: translateY(-50%);" action="script.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="api_key">Your Deepl Api Key: </label>
+            <input class="form-control" type="text" name="api_key" id="api_key">
+    
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Your lang.php file:</label>
+            <input name="lang" class="form-control" type="file" id="formFile">
+          </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label style="width:15rem" class="input-group-text" for="inputGroupSelect01">Choose a source language:</label>
+                </div>
+                <select style="width:10rem" name="source" class="custom-select" id="inputGroupSelect01">
+                  <option value="EN">English</option>
+                  <option value="PL">Polish</option>
+                  <option value="PT">Portugese</option>
+                  <option value="DE">German</option>
+                  <option value="RU">Russian</option>
+                  <option value="UK">Ukrainian</option>
+                  <option value="FR">French</option>
+                  <option value="ES">Spanish</option>
+                  <option value="IT">Italian</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label style="width:15rem" class="input-group-text" for="inputGroupSelect01">Choose a target language:</label>
+                </div>
+                <select style="width:10rem" name="target" class="custom-select" id="inputGroupSelect01">
+                  <option value="PL">Polish</option>
+                  <option value="EN-GB">British English</option>
+                  <option value="PT-BR">Brazilian Portugese</option>
+                  <option value="DE">German</option>
+                  <option value="RU">Russian</option>
+                  <option value="UK">Ukrainian</option>
+                  <option value="FR">French</option>
+                  <option value="ES">Spanish</option>
+                  <option value="IT">Italian</option>
+                </select>
+            </div>
+        <button type="submit" class="btn btn-info">translate</button>
+    </form>
+</body>
+</html>
